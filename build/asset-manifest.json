@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/app-will-gohere-for-deployed-page/static/css/main.f84c482a.css",
-    "main.js": "/app-will-gohere-for-deployed-page/static/js/main.c058eea0.js",
-    "static/js/787.28cb0dcd.chunk.js": "/app-will-gohere-for-deployed-page/static/js/787.28cb0dcd.chunk.js",
-    "static/media/redesign.png": "/app-will-gohere-for-deployed-page/static/media/redesign.0a382456d959243618a4.png",
-    "static/media/portfoliodemo.png": "/app-will-gohere-for-deployed-page/static/media/portfoliodemo.192b698eb667dc5fde78.png",
-    "static/media/iterdesign.png": "/app-will-gohere-for-deployed-page/static/media/iterdesign.384d7adbb77e798ef8ee.png",
-    "index.html": "/app-will-gohere-for-deployed-page/index.html",
-    "main.f84c482a.css.map": "/app-will-gohere-for-deployed-page/static/css/main.f84c482a.css.map",
-    "main.c058eea0.js.map": "/app-will-gohere-for-deployed-page/static/js/main.c058eea0.js.map",
-    "787.28cb0dcd.chunk.js.map": "/app-will-gohere-for-deployed-page/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/final-portfolio/static/css/main.a7effccb.css",
+    "main.js": "/final-portfolio/static/js/main.ca3f9a7a.js",
+    "static/js/787.28cb0dcd.chunk.js": "/final-portfolio/static/js/787.28cb0dcd.chunk.js",
+    "static/media/redesign.png": "/final-portfolio/static/media/redesign.0a382456d959243618a4.png",
+    "static/media/portfoliodemo.png": "/final-portfolio/static/media/portfoliodemo.192b698eb667dc5fde78.png",
+    "static/media/iterdesign.png": "/final-portfolio/static/media/iterdesign.384d7adbb77e798ef8ee.png",
+    "index.html": "/final-portfolio/index.html",
+    "main.a7effccb.css.map": "/final-portfolio/static/css/main.a7effccb.css.map",
+    "main.ca3f9a7a.js.map": "/final-portfolio/static/js/main.ca3f9a7a.js.map",
+    "787.28cb0dcd.chunk.js.map": "/final-portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f84c482a.css",
-    "static/js/main.c058eea0.js"
+    "static/css/main.a7effccb.css",
+    "static/js/main.ca3f9a7a.js"
   ]
 }

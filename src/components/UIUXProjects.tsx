@@ -29,16 +29,18 @@ export default function UIUXProjects() {
                                             Class Assignment (UI/UX)
                                         </h4>
                                         <p className="mt-4 text-lg text-neutral-700">
-                                            I chose to re-design the website of
-                                            a dive center I worked at over the
-                                            summer, in hopes that they could use
-                                            my re-design to improve users'
-                                            experience on their site.
+                                            How can an existing website be
+                                            improved from a User Experience
+                                            standpoint?
                                         </p>
                                         <p className="mt-4 text-lg text-neutral-700">
-                                            TODO: Add the enumerated stuff they
-                                            talk about on handout
+                                            For this project, I chose to
+                                            re-design the website of a dive
+                                            center I worked at over the summer,
+                                            focusing on improving usability and
+                                            accessibility.
                                         </p>
+
                                         <div className="mt-6 flex space-x-4">
                                             <a
                                                 href="https://thoughtfulkoala666.github.io/redesigned-site/"
