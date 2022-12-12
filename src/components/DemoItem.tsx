@@ -19,24 +19,6 @@ interface DemoItemProps {
 }
 
 export default function DemoItem(props: DemoItemProps) {
-    // let contentClassName =
-    //     "mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0";
-    // if (props.left) {
-    //     contentClassName += "lg:col-start-2";
-    // }
-
-    // let imagePosClassName = "mt-12 sm:mt-16 lg:mt-0";
-    // if (props.left) {
-    //     imagePosClassName += "lg:col-start-1";
-    // }
-    // let innerImageClassName =
-    //     "w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:h-full lg:w-auto lg:max-w-none";
-    // if (props.left) {
-    //     innerImageClassName += "lg:left-0 ";
-    // } else {
-    //     innerImageClassName += "lg:right-0";
-    // }
-
     return (
         <div className="py-8 ">
             <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
@@ -89,7 +71,7 @@ export default function DemoItem(props: DemoItemProps) {
                             <img
                                 className={classNames(
                                     props.left ? "lg:right-0" : "lg:left-0",
-                                    "w-full rounded-xl shadow-md ring-1 ring-black ring-opacity-10 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                                    "w-full rounded-xl shadow-md ring-1 ring-black ring-opacity-10 absolute h-fit"
                                 )}
                                 src={props.imgsrc}
                                 alt={props.imgalttext}

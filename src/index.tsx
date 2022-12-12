@@ -9,11 +9,19 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import PLEASEDEARGOD from "./components/PLEASEDEARGOD";
 import ProjectWrapper from "./components/ProjectWrapper";
 import Header from "./components/Header";
+import ProjectPersonas from "./components/ProjectPersonas";
 
 const router = createHashRouter([
     { errorElement: <PLEASEDEARGOD /> },
     { path: "/", element: <App /> },
-    // { path: "/rachel", element: <App /> },
+    {
+        path: "/personas",
+        element: (
+            <div>
+                <ProjectPersonas />
+            </div>
+        ),
+    },
     {
         path: "/redesign",
         element: (
