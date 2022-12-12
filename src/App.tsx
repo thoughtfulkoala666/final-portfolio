@@ -7,6 +7,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 //@ts-ignore
 import Fade from "react-reveal/Fade";
 import UIUXProjects from "./components/UIUXProjects";
+import { Modal } from "react-responsive-modal";
 
 function App() {
     function classNames(...classes: any[]) {
@@ -107,7 +108,7 @@ function Intro() {
                 <Fade delay={1000} duration={1500}>
                     <div className="flex items-center justify-center flex-col">
                         <h4 className="text-2xl font-bold">About</h4>
-                        <div className="w-3/4">
+                        <div className="w-5/6">
                             <p className="text-center text-xl pt-3">
                                 As someone interested in education, I've always
                                 had a desire to bridge the gap between every day
@@ -117,8 +118,8 @@ function Intro() {
                                 examine problems in a whole new light. Thinking
                                 about usability, accessibility, learnability,
                                 and memorability are critical considerations in
-                                all areas of development, from the front-end
-                                websites to the backend API interface designs.
+                                all areas of development, from web pages to the
+                                backend API interface designs.
                                 <div className="p-2" />
                                 Here are some of the projects I worked on to
                                 help get me where I am today

@@ -129,18 +129,16 @@ export default function UIUXProjects() {
                                             Class Assignment (UI/UX)
                                         </h4>
                                         <p className="mt-4 text-lg text-neutral-700">
-                                            In order to assess the quality of
-                                            the interface, people were observed
-                                            using the washing machine and the
-                                            following observations were recorded
-                                            for each user.
+                                            How do different users interact with
+                                            the same novel interface? What can
+                                            we learn about users based on how
+                                            they interact with the interface?
                                         </p>
                                         <p className="mt-4 text-lg text-neutral-700">
-                                            In order to assess the quality of
-                                            the interface, people were observed
-                                            using the washing machine and the
-                                            following observations were recorded
-                                            for each user.
+                                            I chose to observe people using a
+                                            waching machine, where I eventually
+                                            derived user personas based on
+                                            recorded observations and analysis.
                                         </p>
                                         <div className="mt-6">
                                             <a
