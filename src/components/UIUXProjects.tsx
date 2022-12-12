@@ -15,20 +15,20 @@ export default function UIUXProjects() {
                     demoDescription="Class Assignment (UI/UX)"
                     paragraphs={[
                         "How do different users interact with the same novel interface? What can we learn about users based on how they interact with the interface?",
-                        "I chose to observe people using a waching machine, where I eventually derived user personas based on recorded observations and analysis.",
+                        "I chose to observe people using a waching machine, where I eventually derived user personas based on recorded observations and analysis, and inferred potential behavior based on my generated personas.",
                     ]}
                     imgsrc={portfoliodemo}
                     left={true}
                     siteLinks={[
                         {
                             buttonText: "Read More",
-                            toPath: "/personas",
+                            toPath: "/personas#very-top",
                         },
                     ]}
                 />
 
                 <DemoItem
-                    demoTitle="Site Redesign"
+                    demoTitle="Responsive Site Redesign"
                     demoDescription="Class Assignment (UI/UX)"
                     paragraphs={[
                         "How can an existing website be improved from a User Experience standpoint?",
@@ -39,7 +39,7 @@ export default function UIUXProjects() {
                     siteLinks={[
                         {
                             buttonText: "Read More",
-                            toPath: "/redesign",
+                            toPath: "/redesign#very-top",
                         },
                     ]}
                 />
@@ -56,7 +56,7 @@ export default function UIUXProjects() {
                     siteLinks={[
                         {
                             buttonText: "Read More",
-                            toPath: "/development",
+                            toPath: "/development#very-top",
                         },
                     ]}
                 />
@@ -73,7 +73,7 @@ export default function UIUXProjects() {
                     siteLinks={[
                         {
                             buttonText: "Read More",
-                            toPath: "/development",
+                            toPath: "/iterative#very-top",
                         },
                     ]}
                 />

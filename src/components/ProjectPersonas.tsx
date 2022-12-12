@@ -23,7 +23,7 @@ export default function ProjectWrapper() {
                 <Fade>
                     <div
                         id="intro"
-                        className="flex flex-col text-center justify-center items-center"
+                        className="flex flex-col text-center justify-center items-center align-center"
                     >
                         <h1 className="text-5xl font-extrabold">
                             Personas & Storyboarding
@@ -44,7 +44,7 @@ export default function ProjectWrapper() {
                 <Fade bottom>
                     <div
                         id="overview"
-                        className="flex flex-col items-center align-center"
+                        className="flex flex-col items-center justify-center "
                     >
                         <div className="p-2" />
                         <h2 className="text-4xl font-extrabold">Overview</h2>
@@ -68,7 +68,7 @@ export default function ProjectWrapper() {
                         <p className="text-xl w-4/6 text-center">
                             Even though there was no technical development
                             utilized in the assignment, the skills I learned
-                            were invalueable and improved my ability to design
+                            were invaluable and improved my ability to design
                             interfaces overall. If you're interesting in
                             learning more about the process, check out the full
                             write up for the project:
@@ -77,7 +77,10 @@ export default function ProjectWrapper() {
                 </Fade>
                 <div className="p-4"></div>
                 <Fade bottom>
-                    <div id="external">
+                    <div
+                        id="external"
+                        className="w-full flex flex-col items-center align-center "
+                    >
                         <a
                             href="https://thoughtfulkoala666.github.io/personas/"
                             className="inline-flex rounded-md border border-transparent bg-blue-500 px-4 py-2 text-base font-bold text-white shadow-sm hover:bg-pink-600 transition-colors duration-300"

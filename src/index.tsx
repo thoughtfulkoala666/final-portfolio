@@ -7,9 +7,9 @@ import { HashRouter } from "react-router-dom";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import PLEASEDEARGOD from "./components/PLEASEDEARGOD";
-import ProjectWrapper from "./components/ProjectWrapper";
 import Header from "./components/Header";
 import ProjectPersonas from "./components/ProjectPersonas";
+import ProjectRedesign from "./components/ProjectRedesign";
 
 const router = createHashRouter([
     { errorElement: <PLEASEDEARGOD /> },
@@ -26,7 +26,23 @@ const router = createHashRouter([
         path: "/redesign",
         element: (
             <div>
-                <ProjectWrapper />
+                <ProjectRedesign />
+            </div>
+        ),
+    },
+    {
+        path: "/development",
+        element: (
+            <div>
+                <ProjectPersonas />
+            </div>
+        ),
+    },
+    {
+        path: "/iterative",
+        element: (
+            <div>
+                <ProjectPersonas />
             </div>
         ),
     },

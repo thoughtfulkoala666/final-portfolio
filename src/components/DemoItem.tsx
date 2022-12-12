@@ -1,6 +1,8 @@
 //@ts-ignore
 import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
+//@ts-ignore
+import { HashLink } from "react-router-hash-link";
 
 function classNames(...classes: any) {
     return classes.filter(Boolean).join(" ");
@@ -44,12 +46,12 @@ export default function DemoItem(props: DemoItemProps) {
                                 ))}
                                 <div className="mt-6 space-x-2">
                                     {props.siteLinks?.map((link) => (
-                                        <Link
+                                        <HashLink
                                             className="inline-flex rounded-md border border-transparent bg-blue-500 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-pink-600 transition-colors duration-300"
                                             to={link.toPath}
                                         >
                                             {link.buttonText}
-                                        </Link>
+                                        </HashLink>
                                     ))}
                                     {props.aLinks?.map((link) => (
                                         <a
