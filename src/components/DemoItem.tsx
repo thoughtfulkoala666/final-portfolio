@@ -1,5 +1,6 @@
 //@ts-ignore
 import Fade from "react-reveal/Fade";
+import { Link } from "react-router-dom";
 
 function classNames(...classes: any) {
     return classes.filter(Boolean).join(" ");
@@ -13,6 +14,7 @@ interface DemoItemProps {
     imgsrc: any;
     left?: boolean;
     aLinks?: { buttonText: string; href: string }[]; // list of hrefs to link to
+    siteLinks?: { buttonText: string; toPath: string }[]; // list of hrefs to link to
     imgalttext?: string;
 }
 
@@ -36,7 +38,7 @@ export default function DemoItem(props: DemoItemProps) {
     // }
 
     return (
-        <div className="py-8 bg-red-500">
+        <div className="py-8 ">
             <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
                 <Fade bottom>
                     <div
@@ -58,15 +60,25 @@ export default function DemoItem(props: DemoItemProps) {
                                         {paragraph}
                                     </p>
                                 ))}
-                                <div className="mt-6">
-                                    <a
-                                        href="https://thoughtfulkoala666.github.io/personas/"
-                                        className="inline-flex rounded-md border border-transparent bg-blue-500 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-pink-600 transition-colors duration-300"
-                                        target={"_blank"}
-                                        rel="noreferrer"
-                                    >
-                                        Full Write Up
-                                    </a>
+                                <div className="mt-6 space-x-2">
+                                    {props.siteLinks?.map((link) => (
+                                        <Link
+                                            className="inline-flex rounded-md border border-transparent bg-blue-500 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-pink-600 transition-colors duration-300"
+                                            to={link.toPath}
+                                        >
+                                            {link.buttonText}
+                                        </Link>
+                                    ))}
+                                    {props.aLinks?.map((link) => (
+                                        <a
+                                            href={link.href}
+                                            className="inline-flex rounded-md border border-transparent bg-blue-500 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-pink-600 transition-colors duration-300"
+                                            target={"_blank"}
+                                            rel="noreferrer"
+                                        >
+                                            {link.buttonText}
+                                        </a>
+                                    ))}
                                 </div>
                             </div>
                         </div>
@@ -77,7 +89,7 @@ export default function DemoItem(props: DemoItemProps) {
                             <img
                                 className={classNames(
                                     props.left ? "lg:right-0" : "lg:left-0",
-                                    "w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                                    "w-full rounded-xl shadow-md ring-1 ring-black ring-opacity-10 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
                                 )}
                                 src={props.imgsrc}
                                 alt={props.imgalttext}

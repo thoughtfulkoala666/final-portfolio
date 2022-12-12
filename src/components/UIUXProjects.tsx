@@ -14,10 +14,16 @@ export default function UIUXProjects() {
                     demoDescription="Class Assignment (UI/UX)"
                     paragraphs={[
                         "How do different users interact with the same novel interface? What can we learn about users based on how they interact with the interface?",
-                        "",
+                        "I chose to observe people using a waching machine, where I eventually derived user personas based on recorded observations and analysis.",
                     ]}
                     imgsrc={portfoliodemo}
                     left={true}
+                    siteLinks={[
+                        {
+                            buttonText: "Read More",
+                            toPath: "/personas",
+                        },
+                    ]}
                 />
 
                 <div className="relative py-8">
