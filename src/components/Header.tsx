@@ -6,7 +6,7 @@ export default function Header() {
             className="h-30 border-b-2 border-t-2 w-full font-bold text-2xl font-mono flex flex-col items-center justify-center"
         >
             <a
-                href={"/"}
+                href={"/final-portfolio"}
                 className="font-bold text-4xl xl:text-6xl pt-6 pb-2 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-pink-600"
             >
                 thoughtfulkoala666
