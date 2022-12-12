@@ -31,7 +31,7 @@ export default function UIUXProjects() {
                     demoTitle="Responsive Site Redesign"
                     demoDescription="Class Assignment (UI/UX)"
                     paragraphs={[
-                        "How can an existing website be improved from a User Experience standpoint?",
+                        "How can an existing website be improved from a User Experience standpoint? Can we make the page responsive to different devices, and accessible to users with disabilities?",
                         "For this project, I chose to re-design the website of a dive center I worked at over the summer, focusing on improving usability and accessibility.",
                     ]}
                     imgsrc={redesign}
@@ -48,8 +48,8 @@ export default function UIUXProjects() {
                     demoTitle="Development (Filter/Sortable Data)"
                     demoDescription="Class Assignment (UI/UX)"
                     paragraphs={[
-                        "How can we build an intuitive interface to?",
-                        "Leveraging React to...",
+                        "How can we build an intuitive interface to filter, sort, and save data?",
+                        "I leveraged ReactJS to build a web application that displays musical albums, and allows users to sort and filter based on the sonic qualities of the album, in addition to the visual appearance of the album cover. This targets users who are both interested in the musical aspects of the albums themselves, in addition to collectors who are also concerned with the apperance of the album.",
                     ]}
                     imgsrc={devproject}
                     left={true}
@@ -65,7 +65,7 @@ export default function UIUXProjects() {
                     demoTitle="Iterative Design"
                     demoDescription="Class Assignment (UI/UX)"
                     paragraphs={[
-                        "How can we build an intuitive interface to?",
+                        "How can we build an interface for a new product without any influence from the existing design?",
                         "For this project, our team created a user interface for a Y-Combinator startup named OnScale. OnScale seeks to connect creators with brands so that the creators can spend more time creating. With this premise in mind, our team created concepts for webpages, then wireframes for a possible app, and finally, a high fidelity mock up to test with real users.",
                     ]}
                     imgsrc={iterdesign}

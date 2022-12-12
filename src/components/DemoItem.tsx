@@ -28,7 +28,7 @@ export default function DemoItem(props: DemoItemProps) {
                     <div
                         className={classNames(
                             props.left ? "lg:col-start-2" : "",
-                            "mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0 "
+                            "mx-auto max-w-xl px-4 py-56 lg:py-36 sm:px-6 lg:mx-0 lg:max-w-none l lg:px-0 "
                         )}
                     >
                         <div>

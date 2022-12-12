@@ -10,6 +10,8 @@ import PLEASEDEARGOD from "./components/PLEASEDEARGOD";
 import Header from "./components/Header";
 import ProjectPersonas from "./components/ProjectPersonas";
 import ProjectRedesign from "./components/ProjectRedesign";
+import ProjectIterative from "./components/ProjectIterative";
+import ProjectDevelopment from "./components/ProjectDevelopment";
 
 const router = createHashRouter([
     { errorElement: <PLEASEDEARGOD /> },
@@ -34,7 +36,7 @@ const router = createHashRouter([
         path: "/development",
         element: (
             <div>
-                <ProjectPersonas />
+                <ProjectDevelopment />
             </div>
         ),
     },
@@ -42,7 +44,7 @@ const router = createHashRouter([
         path: "/iterative",
         element: (
             <div>
-                <ProjectPersonas />
+                <ProjectIterative />
             </div>
         ),
     },
