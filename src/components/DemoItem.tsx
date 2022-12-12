@@ -1,0 +1,91 @@
+//@ts-ignore
+import Fade from "react-reveal/Fade";
+
+function classNames(...classes: any) {
+    return classes.filter(Boolean).join(" ");
+}
+
+// Define the type for demo item props
+interface DemoItemProps {
+    demoTitle: string;
+    demoDescription: string;
+    paragraphs: string[];
+    imgsrc: any;
+    left?: boolean;
+    aLinks?: { buttonText: string; href: string }[]; // list of hrefs to link to
+    imgalttext?: string;
+}
+
+export default function DemoItem(props: DemoItemProps) {
+    // let contentClassName =
+    //     "mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0";
+    // if (props.left) {
+    //     contentClassName += "lg:col-start-2";
+    // }
+
+    // let imagePosClassName = "mt-12 sm:mt-16 lg:mt-0";
+    // if (props.left) {
+    //     imagePosClassName += "lg:col-start-1";
+    // }
+    // let innerImageClassName =
+    //     "w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:h-full lg:w-auto lg:max-w-none";
+    // if (props.left) {
+    //     innerImageClassName += "lg:left-0 ";
+    // } else {
+    //     innerImageClassName += "lg:right-0";
+    // }
+
+    return (
+        <div className="py-8 bg-red-500">
+            <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
+                <Fade bottom>
+                    <div
+                        className={classNames(
+                            props.left ? "lg:col-start-2" : "",
+                            "mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0 "
+                        )}
+                    >
+                        <div>
+                            <div className="mt-6">
+                                <h2 className="text-3xl font-bold tracking-tight">
+                                    {props.demoTitle}
+                                </h2>
+                                <h4 className="text-gray-400 text-md pb-1">
+                                    {props.demoDescription}
+                                </h4>
+                                {props.paragraphs.map((paragraph) => (
+                                    <p className="mt-4 text-lg text-neutral-700">
+                                        {paragraph}
+                                    </p>
+                                ))}
+                                <div className="mt-6">
+                                    <a
+                                        href="https://thoughtfulkoala666.github.io/personas/"
+                                        className="inline-flex rounded-md border border-transparent bg-blue-500 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-pink-600 transition-colors duration-300"
+                                        target={"_blank"}
+                                        rel="noreferrer"
+                                    >
+                                        Full Write Up
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={"mt-12 sm:mt-16 lg:mt-0 "}>
+                        <div className="flex justify-center items-center lg:m-0 lg:h-full lg:px-0">
+                            <img
+                                className={classNames(
+                                    props.left ? "lg:right-0" : "lg:left-0",
+                                    "w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                                )}
+                                src={props.imgsrc}
+                                alt={props.imgalttext}
+                            />
+                        </div>
+                    </div>
+                </Fade>
+            </div>
+        </div>
+    );
+}

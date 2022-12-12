@@ -7,11 +7,21 @@ import { HashRouter } from "react-router-dom";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import PLEASEDEARGOD from "./components/PLEASEDEARGOD";
+import ProjectWrapper from "./components/ProjectWrapper";
+import Header from "./components/Header";
 
 const router = createHashRouter([
     { errorElement: <PLEASEDEARGOD /> },
     { path: "/", element: <App /> },
-    { path: "/rachel", element: <App /> },
+    // { path: "/rachel", element: <App /> },
+    {
+        path: "/redesign",
+        element: (
+            <div>
+                <ProjectWrapper />
+            </div>
+        ),
+    },
 ]);
 
 const root = ReactDOM.createRoot(
@@ -24,6 +34,7 @@ root.render(
         {/* <HashRouter>
             <App />
         </HashRouter> */}
+        <Header />
         <RouterProvider router={router} />
     </React.StrictMode>
 );
