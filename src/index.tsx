@@ -4,22 +4,27 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { HashRouter } from "react-router-dom";
-import {
-    createBrowserRouter,
-    createRoutesFromElements,
-    Route,
-    RouterProvider,
-} from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
+
+import PLEASEDEARGOD from "./components/PLEASEDEARGOD";
+
+const router = createHashRouter([
+    { errorElement: <PLEASEDEARGOD /> },
+    { path: "/", element: <App /> },
+    { path: "/rachel", element: <App /> },
+]);
 
 const root = ReactDOM.createRoot(
     document.getElementById("root") as HTMLElement
 );
+
 root.render(
     <React.StrictMode>
         {/* Have to use HashRouter because we are deploying on GitHub Pages */}
-        <HashRouter>
+        {/* <HashRouter>
             <App />
-        </HashRouter>
+        </HashRouter> */}
+        <RouterProvider router={router} />
     </React.StrictMode>
 );
 

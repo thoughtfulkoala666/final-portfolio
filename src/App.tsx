@@ -8,6 +8,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import Fade from "react-reveal/Fade";
 import UIUXProjects from "./components/UIUXProjects";
 import { Modal } from "react-responsive-modal";
+import { Link } from "react-router-dom";
 
 function App() {
     function classNames(...classes: any[]) {
@@ -24,6 +25,7 @@ function App() {
     return (
         <div className="">
             {Header()}
+            <Link to="/rachel">rachel</Link>
             <div
                 id="main"
                 className="flex flex-col items-center justify-center"
